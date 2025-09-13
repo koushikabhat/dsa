@@ -46,10 +46,26 @@ public class Main
 	    {
 	       Node temp = new Node(arr[i]);
 	       mover.next = temp;
-	       temp = mover;
+	       mover = temp;
 	    }
 	    
-	    System.out.print(head.data);
+	    System.out.println(head.data);
+	    
+	    //traversing the linke list
+	    
+	    //create a another curr that points to head and move it
+	    System.out.println("travsing the ll");
+	     Node curr = head;
+	    while(curr.next != null)
+	    {
+	        System.out.print(curr.data + " ");
+	        curr = curr.next;
+	    }
+	    
+	    
+	    //length of ll 
+	    //add Count variable above 
+	    //for searching add curr.data == value given or not 
 	}
 }
 
